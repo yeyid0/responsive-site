@@ -5,11 +5,11 @@
     color: #EEEEEE;                                                                                                      
 }                                                                                                      
 body{                                                                                                      
-    background-color: #373A40;                                                                                                      
+    background-color: #282a2e;                                                                                                      
 }                                                                                                      
 .header{                                                                                                      
     height: 10%;                                                                                                      
-    background-color: #686D76;                                                                                                      
+    background-color: #a16b06;                                                                                                      
     display: flex;                                                                                                       
     flex-direction: row;                                                                                                      
     justify-content: space-between;                                                                                                      
@@ -17,10 +17,18 @@ body{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);                                                                                                      
 }                                                                                                      
 .menu{                                                                                                      
-    display: flex;                                                                                                      
-    gap: 25px;                                                                                                      
+    display: flex;                                                                                                                                                                                                           
     align-items: center;                                                                                                      
-}                                                                                                      
+}                
+.texts{
+    display: flex;
+    gap: 40px;
+}    
+.menu-img{
+    display:none;
+    width: 35px;
+    cursor: pointer;
+}                                                                                  
 .logo{                                                                                                      
     cursor: pointer;                                                                                                      
 }                                                                                                      
@@ -29,7 +37,7 @@ a{
     transition-duration: 0.4s;                                                                                                    
 }                                                                                                      
 a:hover{                                                                                                      
-    color: #ad5e22;                                                                                   
+    color:#282a2e;                                                                                   
 }                                                                                                      
 .main{                                                                                                      
     display: flex;                                                                                                      
@@ -53,18 +61,19 @@ a:hover{
     text-align: center;                                                                                                      
 }                                                                                                      
 .main-button{                                                                                                      
-    background-color: #ad5e22;                                                                                                      
-    font-size: 24px;                                                                                                      
+    background: rgb(255, 210, 86);
+    background: linear-gradient(90deg, rgb(255, 220, 124) 0%, rgba(161,107,6,1) 33%, rgba(161,107,6,1) 100%);                                                                                                   
+    font-size: 24px;      
+    font-family:none;                                                                                                
     border: none;                                                                                                      
     text-decoration: none;                                                                                                      
-    border-radius: 10px;                                                                                                      
+    border-radius: 20px;                                                                                                      
     padding: 5px 40px;                                                                                                      
     cursor: pointer;                                                                                                      
     transition-duration: 0.4s;                                                                                                      
 }                                                                                                      
 .main-button:hover{       
-    background-color: #EEEEEE;  
-    color: #ad5e22;                                                                                             
+    background-color: #EEEEEE;                                                                                               
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(247, 245, 245, 0.19);                                                                                                      
 }                                                                                                      
 .main-img{                                                                                                      
@@ -75,29 +84,38 @@ a:hover{
 }                                                                                                      
 .subelerimiz{                                                                                                      
     display: flex;      
-    flex-direction: column;                                                                                                
-    justify-content: center;                                                                                                      
-    align-items: center;                                                                                                                                                                                             
-    padding: 80px 40px;                                                                                                      
-}                  
+    flex-direction: column;                                                                                                                           
+    justify-content: center;                                                                                                                                 
+    align-items: center;                                                                                                                                                                                                                        
+    padding: 80px 40px;                                                                                                                                 
+}                 
 .gallery{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 80px 40px;
 }
-.gallery-2{
+.resimler{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ucluresimler{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px;
 }
 .gallery-img{
-    width: 33%;
+    width: 28%;
     border-radius: 20px;
-    box-shadow: 10px 10px 40px black;
+}
+.uzunresim{
+    width: 500px;
 }
 .iletisim{                                                                                                      
     display: flex;                                                                                                                                                                                                           
@@ -119,50 +137,89 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
     padding: 80px 40px;
 }
 .i-button{
     background-color: #EEEEEE;
-    color: #ad5e22;
+    color: black;
     font-size: 24px;
     border: none;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px 40px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
+.last{
+    display: flex;
+    justify-content: end;
+    margin: 80px 110px;
+}
+.i-buttonz{
+
+    background: rgb(255, 210, 86);
+    background: linear-gradient(90deg, rgb(255, 220, 124) 0%, rgba(161,107,6,1) 33%, rgba(161,107,6,1) 100%);
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
 .i-button:hover{
-    background-color:#ad5e22 ;
-    color: #EEEEEE;
+    background-color:#EEEEEE ;
+        box-shadow: 0 12px 16px 0 rgba(250, 249, 249, 0.24), 0 17px 50px 0 rgba(248, 247, 247, 0.19);
+}
+.i-buttonz:hover{
+    background-color:#EEEEEE ;
     box-shadow: 0 12px 16px 0 rgba(250, 249, 249, 0.24), 0 17px 50px 0 rgba(248, 247, 247, 0.19);
 }
 .i-input{
     background-color: #EEEEEE;
-    color: #ad5e22;
+    color: black;
     width: 90%;
     height: 90%;
     font-size: 24px;
     border: none;
     text-decoration: none;
-    border-radius: 10px;
     padding: 5px 40px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 875px){
     .main{                                                                                                      
         flex-direction: column-reverse;                                                                                                     
     }
     .gallery{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }     
     .iletisim{                                                                                                      
         display: flex;  
         flex-direction: column;                                                                                                                                                                                                         
     }
+    .resimler{
+        flex-direction: row;
+    }
     .i-buttons{
         flex-direction: row;
         gap: 15px;
     }
+    .ucluresimler {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ucluresimler img {
+        width: 73%;     
+        max-width: 100%;
+    }
+    .texts{
+        display: none;
+        
+    }
+    .menu-img{
+        display: block;
+
+    }
+    
 }
